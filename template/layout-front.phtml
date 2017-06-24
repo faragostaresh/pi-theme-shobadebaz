@@ -114,6 +114,12 @@ if ($module != 'user') {
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><?php echo $this->widget('shop-basket'); ?></li>
+                    <li><a href="https://www.shobadebaz.com/contact">تماس با ما</a></li>
+                    <li><a href="https://www.shobadebaz.com/page/about/">درباره ما</a></li>
+                    <li><a href="https://www.shobadebaz.com/contact" class="pi-header-tel">۰۲۱-۷۷۰۰۴۴۱۲</a></li>
+                </ul>
                 <?php echo $this->widget('system-user-bar'); ?>
             </div>
         </div>
@@ -128,23 +134,38 @@ if ($module != 'user') {
                 </button>
                 <?php /* if ($module == 'system') { ?>
                     <h1 class="navbar-brand">
-                        <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                        <a href="https://www.shobadebaz.com" title="<?php echo _escape($sitename); ?>">
                             <?php echo _escape($sitename); ?>
                         </a>
                     </h1>
                 <?php } else { ?>
                     <h2 class="navbar-brand">
-                        <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                        <a href="https://www.shobadebaz.com" title="<?php echo _escape($sitename); ?>">
                             <?php echo _escape($sitename); ?>
                         </a>
                     </h2>
                 <?php } */ ?>
             </div>
-            <div class="navbar-collapse collapse clearfix row">
-                <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav col-md-8'); ?>
-                <div class="navbar-search col-md-4">
+            <div class="navbar-collapse collapse clearfix">
+                <?php /* echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav col-md-8'); */ ?>
+                <?php /* <div class="navbar-search col-md-4">
                     <?php echo $this->widget('search-search'); ?>
-                </div>
+                </div> */ ?>
+                <ul class="nav navbar-nav pi-navbar-nav">
+
+                    <li>
+                        <a href="https://www.shobadebaz.com"><i class="fa fa-home"></i>  صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a href="https://www.shobadebaz.com/video"><i class="fa fa-video-camera"></i> ویدیوهای آموزشی</a>
+                    </li>
+                    <li>
+                        <a href="https://www.shobadebaz.com/news/معرفی-شعبده-بازان"><i class="fa fa-users"></i> معرفی شعبده بازان</a>
+                    </li>
+                    <li>
+                        <a href="http://shop.shobadebaz.com"><i class="fa fa-shopping-cart"></i> فروشگاه آنلاین</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -275,16 +296,16 @@ if ($module != 'user') {
         </div>
         <div class="pi-section-bottom">
             <div class="clearfix">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <?php if ($module == 'system') { ?>
                         <h1>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                            <a href="https://www.shobadebaz.com" title="<?php echo _escape($sitename); ?>">
                                 <?php echo _escape($sitename); ?>
                             </a>
                         </h1>
                     <?php } else { ?>
                         <h2>
-                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                            <a href="https://www.shobadebaz.com" title="<?php echo _escape($sitename); ?>">
                                 <?php echo _escape($sitename); ?>
                             </a>
                         </h2>
@@ -300,8 +321,11 @@ if ($module != 'user') {
                         <li><a target="_blank" title="Aparat" href="http://www.aparat.com/shobadebaz"><img class="img-responsive" src="<?php echo $this->assetTheme('image/social-youtube.png') ?>" alt="Aparat"></a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 text-center">
-                    <img class="img-responsive" id='wmcssguiwmcssgui' style='cursor:pointer' onclick='window.open("https://trustseal.enamad.ir/Verify.aspx?id=8080&p=aqgwdrfsaqgwdrfs", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")' alt='نماد اعتماد الکترونیک' src='https://trustseal.enamad.ir/logo.aspx?id=8080&p=ukaqgthvukaqgthv'/>
+                <div class="col-md-3">
+                    <div class="pi-section-crt clearfix">
+                        <img class="img-responsive" src="<?php echo $this->assetTheme('image/behpardakht.png') ?>">
+                        <img class="img-responsive" class="img-responsive" id='wmcssguiwmcssgui' style='cursor:pointer' onclick='window.open("https://trustseal.enamad.ir/Verify.aspx?id=8080&p=aqgwdrfsaqgwdrfs", "Popup","toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30")' alt='نماد اعتماد الکترونیک' src='https://trustseal.enamad.ir/logo.aspx?id=8080&p=ukaqgthvukaqgthv'/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -310,7 +334,7 @@ if ($module != 'user') {
 <footer class="pi-footer">
     <div class="container">
         <div class="row">
-            <div class="text-left col-md-6" data-rel="license">تمام حقوق مطالب برای وب سایت <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
+            <div class="text-left col-md-6" data-rel="license">تمام حقوق مطالب برای وب سایت <a href="https://www.shobadebaz.com" title="<?php echo _escape($sitename); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
             <div class="text-right col-md-6" data-rel="license">طراحی و توسعه <a title="فراگسترش" href="http://www.faragostaresh.com" target="_blank">فراگسترش</a>            </div>
         </div>
     </div>

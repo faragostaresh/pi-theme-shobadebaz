@@ -9,7 +9,7 @@ body {
     background-image: url(../image/header.png);
     background-position: top center;
     background-repeat: no-repeat;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .container {
@@ -317,8 +317,13 @@ form .icon-question-sign {
 
 /* header */
 .pi-header {
-    padding-bottom: 225px;
+    background: rgba(0,0,0, .5);
+    margin-bottom: 225px;
+}
+
+.pi-header .col-md-12 {
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .pi-header .navbar-nav > li > a {
@@ -334,8 +339,11 @@ form .icon-question-sign {
     background: none;
 }
 
-.pi-header .user-bar {
-    padding-right: 150px;
+.pi-header .navbar-nav > li > a.pi-header-tel {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 25px;
 }
 
 /* section */
@@ -364,6 +372,7 @@ form .icon-question-sign {
     border-bottom-left-radius: 4px;
     border: 1px solid #540505;
     color: #fff;
+    text-align: justify;
 }
 
 .pi-section-bottom a {
@@ -378,6 +387,18 @@ form .icon-question-sign {
 #pi-shop .pi-section-bottom, #pi-order .pi-section-bottom {
     background-color: #121A29;
     border: 1px solid #121A29;
+}
+
+.pi-section-crt {
+    background: #fff;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.pi-section-crt img {
+    width: 45%;
+    float: right;
+    padding-left: 5px;
 }
 
 /* footer */
@@ -451,13 +472,13 @@ form .icon-question-sign {
 }
 
 #pi-shop .pi-nav .navbar-default .navbar-nav > li > a {
-    color: #000;
+    color: #5A0202;
 }
 
 .pi-nav .navbar-default .navbar-nav > li > a:hover,
 .pi-nav .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #000;
+    background-color: #F2BF48;
     border-radius: 8px;
     transition: all 0.6s;
     -webkit-transition: all 0.6s;
@@ -478,7 +499,7 @@ form .icon-question-sign {
 .pi-nav .navbar-default .navbar-nav > .active > a:hover,
 .pi-nav .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #000;
+    background-color: #5A0202;
     border-radius: 8px;
     transition: all 0.6s;
     -webkit-transition: all 0.6s;
