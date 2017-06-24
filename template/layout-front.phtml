@@ -99,9 +99,9 @@ $breadcrumbs = $this->breadcrumb(
 // Load front.js on footer
 $this->footScript()->appendFile($this->assetTheme('js/front.js'));
 
-if ($module != 'user') {
-   Pi::service('authentication')->requireLogin();
-}
+//if ($module != 'user') {
+//   Pi::service('authentication')->requireLogin();
+//}
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo $locale; ?>">
