@@ -389,16 +389,16 @@ form .icon-question-sign {
     border: 1px solid #121A29;
 }
 
-.pi-section-crt {
-    background: #fff;
-    border-radius: 4px;
-    padding: 4px;
-}
+.pi-section-crt {}
 
 .pi-section-crt img {
     width: 45%;
     float: right;
-    padding-left: 5px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* footer */
