@@ -817,6 +817,22 @@ form .icon-question-sign {
     margin-bottom: 15px;
 }
 
+.shop-block-basket .btn-primary {
+    background: none;
+    border: 0;
+}
+
+.shop-block-basket .btn-primary:focus,
+.shop-block-basket .btn-primary.focus {
+    background: none;
+    border: 0;
+}
+
+.shop-block-basket .btn-primary:hover {
+    background: none;
+    border: 0;
+}
+
 /* Video */
 #pi-system .col-md-4 {
     width: 28% !important;
@@ -1258,4 +1274,3 @@ form .icon-question-sign {
     background: #fff;
     color: #08c;
 }
-
