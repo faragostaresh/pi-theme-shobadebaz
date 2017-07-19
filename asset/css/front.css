@@ -775,6 +775,7 @@ form .icon-question-sign {
     padding-top: 15px;
 }
 
+/* Shop */
 .shop-block-product h3 {
     font-size: 14px;
 }
@@ -804,7 +805,19 @@ form .icon-question-sign {
     margin-top: -180px !important;
 }
 
+.image-box-size-1 {
+    margin-bottom: 15px;
+}
 
+.image-box-size-2 {
+    margin-bottom: 30px;
+}
+
+.image-box-size-3 {
+    margin-bottom: 15px;
+}
+
+/* Video */
 #pi-system .col-md-4 {
     width: 28% !important;
 }
@@ -1245,3 +1258,4 @@ form .icon-question-sign {
     background: #fff;
     color: #08c;
 }
+
