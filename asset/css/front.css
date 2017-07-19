@@ -26,7 +26,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 h2 {
@@ -831,6 +831,11 @@ form .icon-question-sign {
 .shop-block-basket .btn-primary:hover {
     background: none;
     border: 0;
+}
+
+.product-order-form {
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 /* Video */
